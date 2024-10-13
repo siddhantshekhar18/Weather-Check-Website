@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Weather Check</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Weather Check</h1>
+            <div id="local-time"></div>
+        </header>
+
+        <!-- Weather Search Section -->
+        <section id="search-section">
+            <input type="text" id="city-input" placeholder="Enter City">
+            <button id="search-btn">Get Weather</button>
+            <button id="unit-toggle">°F/°C</button>
+        </section>
+
+        <!-- Weather Alert -->
+        <div id="weather-alert" class="hidden"></div>
+
+        <!-- Weather Display Section -->
+        <section id="weather-info" class="hidden">
+            <h2 id="city-name"></h2>
+            <div id="icon">
+                <img src="" alt="Weather Icon" id="weather-icon">
+            </div>
+            <p id="description"></p>
+            <p id="temperature"></p>
+            <p id="humidity"></p>
+            <p id="wind-speed"></p>
+            <p id="sunrise-sunset"></p>
+        </section>
+
+        <!-- 5-Day Forecast Section -->
+        <section id="forecast" class="hidden">
+            <h2>5-Day Forecast</h2>
+            <div id="forecast-days"></div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>Weather Data Provided by OpenWeatherMap</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
